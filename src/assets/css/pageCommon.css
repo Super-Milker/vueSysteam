@@ -1,0 +1,18 @@
+.serachGroup {
+    width: 100%;
+    height: 60px;
+    padding-top: 10px;
+    border-top: 1px solid #EBEEF5;
+    /* background-color: #c0c4cc; */
+  }
+  .buttonGroup {
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid #EBEEF5;
+    /* border-bottom: 1px solid #c0c4cc; */
+  }
+  .formSearchGroup{
+    display: flex;
+    justify-content: flex-start;
+  }
+  

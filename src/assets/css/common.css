@@ -1,0 +1,68 @@
+.login-div {
+    overflow        : hidden;
+    width           : 100%;
+    height          : inherit;
+    background-color: #4B4B4B
+}
+
+html,
+body,
+#app,
+.content-hih-div,
+.el-container {
+    height  : 100%;
+    margin  : 0px;
+    padding : 0px;
+    overflow: hidden;
+}
+
+.content-hih-div {
+    overflow: hidden;
+}
+
+p strong {
+    font-size: 18px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.beforeCodeJS::before {
+    content: 'js';
+    float  : right;
+    opacity: 0.5;
+}
+
+.beforeCodeHTML::before {
+    content: 'html';
+    float  : right;
+    opacity: 0.5;
+}
+
+/* 图表底图卡片化 */
+.chartsCard {
+    background-color: rgb(255, 255, 255);
+    box-shadow      : 0px 1px 5px 0px rgba(92, 92, 92, 0.28);
+    border-radius   : 4px;
+    margin          : 10px;
+    padding         : 16px;
+}
+
+.cardTitle {
+    color      : #424242;
+    font-size  : 16px;
+    font-family: PingFang SC, Helvetica Neue, Hiragino Sans GB, Microsoft Yahei, WenQuanYi Micro Hei, Roboto, sans-serif;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+/* element 修改 */
+.el-row {
+    margin-left : 0px !important;
+    margin-right: 0px !important;
+}
+
+:focus {
+    outline: 0;
+}
