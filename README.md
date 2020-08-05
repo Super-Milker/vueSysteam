@@ -16,7 +16,6 @@
 
 再次封装了elementui的部分组件，若有想要参考组件封装的小伙伴可以参考一下或者提出更好的意见
 
-![https://github.com/Super-aoao/vueSysteam/blob/master/%E5%B1%95%E7%A4%BA%E5%9B%BE.png]
 
 
 
