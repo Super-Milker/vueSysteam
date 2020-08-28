@@ -18,10 +18,14 @@ import routeWatcher from './components/commonComponents/js/systeamJs/routeWatche
 import './assets/css/common.css'
 import tkDiv from './components/commonComponents/systeamPackage/continerPane'
 import basicPage from './components/commonComponents/systeamPackage/basicPageLayout'
-import {commonButton, commonTable, commonDialog, commonDrawer} from './components/commonComponents/module/interface'
+import {
+  commonButton,
+  commonTable,
+  commonDialog,
+  commonDrawer
+} from './components/commonComponents/module/interface'
 import echarts from 'echarts'
 import apiconfig from './assets/js/apiConfig'
-import img from './assets/img/callUsLeft.png'
 require('./mock')
 // import initConfig from './static/js/config.js'
 
@@ -48,12 +52,17 @@ Vue.component('common-button', commonButton)
 Vue.component('common-table', commonTable)
 Vue.component('TkDiv', tkDiv)
 Vue.component('basicPage', basicPage)
+window.onload = () => {
+  console.log('load')
+}
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   store,
-  components: { App },
+  components: {
+    App
+  },
   template: '<App/>'
 })

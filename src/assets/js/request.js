@@ -2,16 +2,13 @@ import axios from 'axios'
 import Qs from 'qs'
 import store from '@/store/store.js'
 import { MessageBox, Message } from 'element-ui'
-import urlConfig from '../../../static/js/config'
-// baseURL =   ' http://' + document.location.host + '/url_help/'
-const Axios = ({ url, method = 'post', baseURL = 'http://localhost:8080', contentType = 'application/json; charset=UTF-8', data, param, timeout = 10000, responseType = 'json', maxContentLength = 2000, adapter, tip = true }) => {
+const Axios = ({ url, method = 'post', contentType = 'application/json; charset=UTF-8', data, param, timeout = 10000, responseType = 'json', maxContentLength = 2000, adapter, tip = true }) => {
   return new Promise((resolve, reject) => {
     axios({
       url: url,
       method: method,
-      baseURL: baseURL,
       headers: {
-        'Authorization': 'bearer ' + window.sessionStorage.getItem('token'),
+        // 'Authorization': 'bearer ' + window.sessionStorage.getItem('token'),
         'Content-Type': contentType
       },
       param: param,

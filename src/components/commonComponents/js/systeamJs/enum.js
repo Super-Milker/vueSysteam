@@ -25,18 +25,18 @@ const Menu = {
         name: '信息中心',
         icon: 'el-icon-star-off',
         children: [
-          // {
-          //   index: 'netWork',
-          //   name: '硬件中心'
-          // },
+          {
+            index: 'hardware',
+            name: '分析中心'
+          },
           {
             index: 'netWork',
             name: '网络中心'
+          },
+          {
+            index: 'deploy',
+            name: '视频中心'
           }
-          // {
-          //   index: 'netWork',
-          //   name: '配置中心'
-          // }
         ]
       },
       {

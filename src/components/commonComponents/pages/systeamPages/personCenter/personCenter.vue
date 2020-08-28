@@ -64,7 +64,7 @@
             <el-col :xs="24" :lg="12">
               <div class="person-functionCard">
                 <div class="person-functionCard-normal">
-                  <card class="chartsCard" :title="'硬件中心'" :backgroundColor="'rgb(76, 175, 80)'" cardIcon="el-icon-c-scale-to-original"></card>
+                  <card class="chartsCard" :title="'分析中心'" :backgroundColor="'rgb(76, 175, 80)'" :routeTo="'hardware'" cardIcon="el-icon-c-scale-to-original"></card>
                   <div class="person-functionCard-txt">
                     <div>网络质量:目测优良</div>
                     <div>网络带宽:24M/S</div>
@@ -86,7 +86,7 @@
                   </div>
                 </div>
                 <div class="person-functionCard-normal">
-                  <card class="chartsCard" :title="'配置中心'" :backgroundColor="'#330000'" cardIcon="el-icon-s-cooperation"></card>
+                  <card class="chartsCard" :title="'视频中心'" :backgroundColor="'#330000'" :routeTo="'deploy'" cardIcon="el-icon-s-cooperation"></card>
                   <div class="person-functionCard-txt">
                     <div>网络质量:目测优良</div>
                     <div>网络带宽:24M/S</div>
@@ -113,7 +113,6 @@
 </template>
 
 <script>
-import avatarImg from '@/assets/img/aboutUsRight.png'
 import commonEcharts from '@/components/commonComponents/module/echarts/commonEcharts'
 import card from '@/components/commonComponents/module/dashBoard/cardText'
 export default {

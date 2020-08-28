@@ -27,13 +27,12 @@ export default {
     }
   },
   mounted () {
-
   },
   methods: {
     to () {
       this.$request
         .Axios({
-          url: 'api/Login',
+          url: '/api/login',
           data: this.form
         })
         .then(res => {
@@ -63,13 +62,13 @@ export default {
 .login-form {
   width: 100%;
   margin-top: 10%;
-  color: white
+  color: white;
 }
-.login-button{
+.login-button {
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
-.button{
-  background-clip: red
+.button {
+  background-clip: red;
 }
 </style>

@@ -69,6 +69,24 @@ export default new Router({
           },
           component: resolve => require(['@/components/commonComponents/pages/systeamPages/informationCenter/netWork/netWork.vue'], resolve)
         },
+        {
+          path: 'hardware',
+          name: 'hardware',
+          meta: {
+            name: '分析中心',
+            breadNum: 1
+          },
+          component: resolve => require(['@/components/commonComponents/pages/systeamPages/informationCenter/hardware/hardWare.vue'], resolve)
+        },
+        {
+          path: 'deploy',
+          name: 'deploy',
+          meta: {
+            name: '视频中心',
+            breadNum: 1
+          },
+          component: resolve => require(['@/components/commonComponents/pages/systeamPages/informationCenter/deploy/deploy.vue'], resolve)
+        },
         // {
         //   path: 'opinionAdd',
         //   name: 'opinionAdd',
